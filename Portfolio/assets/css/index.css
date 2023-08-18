@@ -1,0 +1,595 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo&family=Josefin+Slab&family=Poppins:wght@400;500;600;700&family=Roboto&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+.btn-a {
+  display: inline-block;
+  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+  color: #fff;
+  font-size: 23px;
+  padding: 8px 32px;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: 2px solid linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+  transition: 0.2s ease-in;
+}
+.btn-a:hover {
+  color: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+  background-color: transparent;
+}
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+section .title::after {
+  content: "who i am";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  padding: 5px;
+  font-size: 20px;
+  background: #fff;
+  color: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+  transform: translateX(-50%);
+}
+section {
+  padding: 80px 0;
+}
+.about,
+.service ,
+.skill,
+.contact,
+footer{
+  font-family: "Poppins", sans-serif;
+}
+.about .about-content,
+.service .service-content,
+.skill .skill-content 
+.contact .contact-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* navbar style */
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+  padding: 30px 0;
+  z-index: 999;
+  transition: all 0.3s linear;
+}
+.navbar.sticky {
+  padding: 20px 0;
+  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+}
+.navbar .logo a {
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+}
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a span {
+  color: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+}
+.navbar.sticky .logo a span {
+  color: #fff;
+}
+.navbar .menu {
+  display: flex;
+}
+.navbar .menu li {
+  list-style: none;
+}
+.navbar .menu li a {
+  color: #111;
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s linear;
+}
+.navbar .menu li a:hover {
+  color: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+}
+
+.navbar .menu-btn {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+/* home section */
+.home {
+  
+  display: flex;
+  align-items: center;
+  background: url("/assets/image/bg.png") no-repeat center;
+  background-position: right 100px top 20vh;
+  height: 100vh;
+  /* background-attachment: fixed; */
+ /* background-color: #111; */
+  color: black;
+  min-height: 500px;
+  font-family: "Ubuntu", sans-serif;
+}
+.home .max-width {
+  margin: 0 auto 0 40px;
+}
+
+.home .home-content .text-1 {
+  font-size: 27px;
+}
+.home .home-content .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .home-content .text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+.home .home-content .text-3 span {
+  color: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+  font-weight: 500;
+}
+
+/* about section */
+
+
+.about .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+
+.about .about-content .left {
+  width: 45%;
+}
+.about .about-content .left img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.about .about-content .right {
+  width: 55%;
+}
+.about .about-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.about .about-content .right .text span {
+  color: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+}
+
+/* service section */
+.service {
+  background-color: #111;
+  color: #fff;
+}
+.service .title::before {
+  content: "";
+  background-color: #fff;
+}
+.service .service-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.service .title::after {
+  content: "what i provide";
+  background-color: #111;
+  color: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+}
+.service .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+.service .service-content .card {
+  width: 350px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  background-color: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  cursor: pointer;
+  transition:all 0.2s linear;
+}
+.service .service-content .card .box{
+  transition:all 0.2s linear;
+}
+.service .service-content .card:hover {
+  transform: scale(1.09,1.09);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.service .service-content .card i{
+   font-size: 40px;
+   color: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+}
+.service .service-content .card .text{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+/* skill */
+.skill .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+.skill .title::after {
+  content: "what i Know";
+}
+.skill  .skill-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.skill  .skill-content .cloumn{
+  width: 400px;
+  margin-bottom: 30px;
+}
+.skill  .skill-content .left .text{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px
+
+}
+.skill  .skill-content .left p{
+text-align: justify;
+}
+.skill  .skill-content .left a{
+  color: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+  position: relative;
+}
+.skill  .skill-content .left a span{
+  height: 2px;
+  width: 30px;
+  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+ position: absolute;
+  bottom:5px;
+  margin-left: 5px ;
+}
+.skill  .skill-content .right .bars{
+  margin-bottom: 15px;
+}
+.skill  .skill-content .right .info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skill  .skill-content .right .info span{
+  font-size: 18px;
+  font-weight: 500;
+}
+.skill  .skill-content .right  .line{
+  height: 5px;
+  width: 100%;
+  background-color: lightgrey;
+  position: relative;
+}
+.skill  .skill-content .right  .line::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 90%;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+}
+.skill  .skill-content .right  .css::before{
+  width: 70%;
+}
+.skill  .skill-content .right  .js::before{
+  width: 50%;
+}
+.skill  .skill-content .right  .java::before{
+  width: 50%;
+}
+.skill  .skill-content .right  .react::before{
+  width: 50%;
+}
+
+/* contact section */
+
+.contact .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+.contact .title::after{
+  content: "get in touch";
+}
+.contact .contact-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact .contact-content .column{
+width: 500px;
+}
+.contact .contact-content .left .text,
+.contact .contact-content .right .text{
+ font-size:20px ;
+ font-weight: 600;
+ margin-bottom: 10px;
+}
+.contact .contact-content .left{
+  margin-bottom: 30px;
+}
+.contact .contact-content .left p{
+text-align: justify;
+}
+.contact .contact-content .left .icons{
+  margin: 10px 0;
+
+}
+.contact .contact-content .row{
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.contact .contact-content .row i{
+  color: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+  font-size: 25px ;
+}
+.contact .contact-content .row .info{
+  margin-left: 30px;
+}
+.contact .contact-content .row .info .head{
+  font-weight: 500;
+}
+.contact .contact-content .row .info .sub-title{
+  color: #333;
+}
+.contact .contact-content .right  form .fields .flex{
+  display: flex;
+  align-items: center;
+
+}
+.contact .contact-content .right  form .fields .flex .filed{
+width: 100%;
+
+}
+.contact .contact-content .right  form .fields .flex .name{
+  margin-right: 20px;
+}
+.contact .contact-content .right  form .filed input{ 
+  padding:15px;
+  width: 100%;
+  margin: 5px;
+  outline: none;
+  border: 1px solid #111;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+.contact .contact-content .right  form .filed textarea{
+  width: 100%;
+  outline: none;
+  padding: 15px;
+  border-radius: 5px ;
+  border: 1px solid #111;
+  margin-left: 4px;
+  font-size: 17px;
+  resize: none;
+  height: 100px;
+}
+.contact .contact-content .right  form  button{
+  margin-left: 4px;
+  padding: 5px 20px;
+  font-size: 20px;
+}
+
+/* footer */
+footer{
+  background-color: #111;
+  padding: 20px 30px ;
+  color: #fff;
+  text-align: center;
+}
+
+footer span span{
+  color: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+}
+
+
+
+
+
+
+.home{
+  padding-bottom: 0;
+}
+.about{
+  padding: 50px 0;
+}
+
+/* media query */
+
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 947px) {
+  .max-width {
+    padding: 0 50px;
+  }
+  .home {
+    height: 90vh;
+background: none;
+  }
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    right: -100%;
+    background-color: #111;
+    /* -webkit-filter: blur(8px); */
+    text-align: center;
+    padding-top: 50px;
+    display: block;
+    transition: all 0.3s linear;
+  }
+
+  .navbar .menu.active {
+    right: 0;
+  }
+  .navbar .menu li {
+    margin: 30px;
+  }
+  .navbar .menu.active li a {
+    font-size: 25px;
+    color: white;
+  }
+  .navbar .menu li a:hover {
+    color: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+  }
+  .navbar .menu-btn {
+    z-index: 999;
+    display: block;
+    color: #111;
+  }
+  .home .home-content a {
+    font-size: 23px;
+    padding: 10px 30px;
+  }
+  .menu-btn i.active::before {
+    content: "\f00d";
+    color: #fff;
+  }
+  .home .home-content .text-2 {
+    font-size: 70px;
+  }
+  .home .home-content .text-3 {
+    font-size: 35px;
+  }
+
+  .about .about-content .column {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .service .service-content{
+    justify-content: center;
+  }
+
+  .skill  .skill-content,.contact .contact-content{
+    justify-content: center;
+  }
+  .skill  .skill-content .cloumn,
+  .contact .contact-content .column{
+    width: 90%;
+  }
+}
+@media (max-width: 1104px) {
+  .home .max-width {
+    margin-left: 0;
+  }
+  .about .about-content .left img {
+    height: 350px;
+    width: 350px;
+  }
+  
+}
+@media (max-width: 690px) {
+  .home {
+    background: none;
+  }
+  .max-width {
+    padding: 0 23px;
+  }
+  .home .home-content .text-2 {
+    font-size: 60px;
+  }
+  .home .home-content .text-3 {
+    font-size: 30px;
+  }
+  .home .home-content a {
+    font-size: 20px;
+    padding: 8px 20px;
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    background: none;
+  }
+  
+  .max-width {
+    padding: 0 23px;
+  }
+  .home .home-content .text-2 {
+    font-size: 50px;
+  }
+  .home .home-content .text-3 {
+    font-size: 27px;
+  }
+}
+@media (max-width: 450px) {
+  .max-width {
+    padding: 0 23px;
+  }
+  .home .home-content .text-2 {
+    font-size: 38px;
+  }
+  .home .home-content .text-3 {
+    font-size: 23px;
+  }
+  .home {
+    background: none;
+  }
+}

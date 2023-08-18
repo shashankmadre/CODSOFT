@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Source+Code+Pro&family=Titillium+Web&family=Ubuntu&display=swap");
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Code Pro', monospace;
+font-family: 'Ubuntu', sans-serif; */
+
+.min-h-screen {
+  min-height: 100vh;
+}
+.bg-red {
+  background-color: red;
+}
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-col {
+  flex-direction: column;
+}
+.item-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.font-bold {
+  font-weight: bolder;
+}
+.my-1 {
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+.my-2 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.px-2 {
+  padding-left: 13px;
+  padding-right: 13px;
+}
+.text-bule {
+  color: #222;
+}
+.big-font {
+  font-size: 24px;
+}
+.btn {
+  padding: 6px 10px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s ease-in;
+}
+.btn:hover {
+  background: transparent;
+  color: black;
+}
+
+.over-x-hiddin {
+  overflow-x: hidden;
+}
+.text-center {
+  text-align: center;
+}
+.highlight {
+  font-weight: bold;
+}
